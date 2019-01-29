@@ -30,3 +30,6 @@ spring-pet-clinic-web/target/*
 /nbdist/
 /.nb-gradle/
 /build/
+spring-pet-clinic-data/target/classes/META-INF/maven/com.faizal/spring-pet-clinic-data/pom.properties
+spring-pet-clinic-web/target/classes/META-INF/maven/com.faizal/spring-pet-clinic-web/pom.properties
+spring-pet-clinic-data/target/classes/META-INF/maven/com.faizal/spring-pet-clinic-data/pom.properties
