@@ -11,6 +11,11 @@
 .sts4-cache
 /.mvn/*
 mvn*
+*.class
+spring-pet-clinic-data/target/
+spring-pet-clinic-data/target/*
+spring-pet-clinic-web/target/
+spring-pet-clinic-web/target/*
 
 ### IntelliJ IDEA ###
 .idea
