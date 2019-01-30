@@ -8,5 +8,21 @@
 
 	<h1 th:text="'Pet Owner Index Page'">Index Page</h1>
 
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>FirstName</th>
+				<th>LastName</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="owner : ${owners}">
+				<td th:text="${owner?.id}">1</td>
+				<td th:text="${owner?.firstname}">Test</td>
+				<td th:text="${owner?.lastname}">Name</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>
