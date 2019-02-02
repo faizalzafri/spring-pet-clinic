@@ -2,6 +2,7 @@ package com.faizal.petclinic.service.map;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.faizal.petclinic.model.Pet;
@@ -11,6 +12,7 @@ import com.faizal.petclinic.service.PetTypeService;
 import com.faizal.petclinic.service.VisitService;
 
 @Service
+@Profile({ "default", "map" })
 public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService {
 
 	private final PetTypeService petTypeService;
