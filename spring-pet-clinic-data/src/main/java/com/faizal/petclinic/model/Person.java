@@ -1,24 +1,31 @@
 package com.faizal.petclinic.model;
 
-public class Person extends BaseEntity{
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 
-	private String firstname;
-	private String lastname;
+@MappedSuperclass
+public class Person extends BaseEntity {
 
-	public String getFirstname() {
-		return firstname;
+	@Column(name = "first_naame")
+	private String firstName;
+	
+	@Column(name = "last_naame")
+	private String lastName;
+
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
-	public String getLastname() {
-		return lastname;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 }
